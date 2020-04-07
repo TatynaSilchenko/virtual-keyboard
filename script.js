@@ -18,13 +18,10 @@ const eventKeyRus = ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-',
     'я', 'ч', 'с', 'м', 'и', 'т', 'ь', 'б', 'ю', '/', '▲', 'Ctr', 'Alt', 'Meta', ' ', 'Meta',
     'Alt', '◄', '▼', '►'];
 
-
 const inputKey = [];
 const pressedKey = [];
 let isEng = true;
 let isCapsLock = false;
-
-
 const textarea = document.createElement('textarea');
 const info = document.createElement('div');
 info.classList.add('info');

@@ -1,72 +1,3 @@
-/*.keyboard{*/
-/*    border: 2px solid white;*/
-/*    margin :0px auto;*/
-/*    width: 760px;*/
-/*}*/
-/*.keyboard-row{*/
-/*    width: 100%;*/
-/*    display: flex;*/
-/*}*/
-/*.keyboard-letter{*/
-/*    width: 40px;*/
-/*    height: 29px;*/
-/*    margin: 5px;*/
-/*    background: #5a70a0;*/
-/*    border-radius: 5px;*/
-/*    text-align: center;*/
-/*    padding-top: 11px;*/
-/*    font-size: 16px;*/
-/*    font-weight: bold;*/
-/*}*/
-/*.keyboard-letter:hover{*/
-/*    cursor: pointer;*/
-/*    background: #84d6fb;*/
-/*}*/
-/*.keyboard :nth-child(1) :last-child{*/
-/*    width: 100px;*/
-/*}*/
-/*.keyboard :nth-child(2) :first-child{*/
-/*    width: 50px;*/
-/*}*/
-/*.keyboard :nth-child(3) :first-child{*/
-/*    width: 100px;*/
-/*}*/
-/*.keyboard :nth-child(3) :last-child{*/
-/*    width: 90px;*/
-/*}*/
-/*.keyboard :nth-child(4) :first-child{*/
-/*    width: 100px;*/
-/*}*/
-/*.keyboard :nth-child(5) :nth-child(1){*/
-/*    width: 60px;*/
-/*}*/
-/*.keyboard :nth-child(5) :nth-child(5){*/
-/*    width: 60px;*/
-/*}*/
-/*.keyboard :nth-child(5) :nth-child(6){*/
-/*    width: 60px;*/
-/*}*/
-/*.keyboard :nth-child(5) :nth-child(4){*/
-/*    width: 300px;*/
-/*}*/
-/*.active{*/
-/*    !*border-radius: 20px;*!*/
-/*    background: #84d6fb;*/
-/*    transition: 0.25s;*/
-/*}*/
-/*.info{*/
-/*    width: 740px;*/
-/*    margin: 0px auto;*/
-/*    padding-top: 20px;*/
-/*}*/
-/*.info::before{*/
-/*    content: "Для переключения языка нажмите Ctrl+Shift L";*/
-/*    color: #5a70a0;*/
-/*    display: flex;*/
-/*    justify-content: flex-end;*/
-/*}*/
-
-
 .textarea {
     width: 55rem;
     height: 17rem;
@@ -77,13 +8,11 @@
     border: 1px solid #5a70a0;;
     font-size: 2.2rem;
 }
-
-textarea:focus {
+.textarea:focus {
     box-shadow: 0 0 10px rgba(90, 112, 160, 1);
     border: 1px solid rgba(90, 112, 160, 1);
 
 }
-
 .keyboard {
     width: 57rem;
     height: 19rem;
@@ -94,11 +23,9 @@ textarea:focus {
     transform: translateX(-50%);
     padding: 4px;
 }
-
 .keyboard__keys {
     text-align: center;
 }
-
 .keyboard__key {
     display: inline-flex;
     align-items: center;
