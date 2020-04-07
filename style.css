@@ -1,92 +1,151 @@
-*{
-    outline: none;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-}
-body{
-    font-family: Roboto, Helvetica, sans-serif;
-}
-textarea{
-    display: block;
+/*.keyboard{*/
+/*    border: 2px solid white;*/
+/*    margin :0px auto;*/
+/*    width: 760px;*/
+/*}*/
+/*.keyboard-row{*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*}*/
+/*.keyboard-letter{*/
+/*    width: 40px;*/
+/*    height: 29px;*/
+/*    margin: 5px;*/
+/*    background: #5a70a0;*/
+/*    border-radius: 5px;*/
+/*    text-align: center;*/
+/*    padding-top: 11px;*/
+/*    font-size: 16px;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.keyboard-letter:hover{*/
+/*    cursor: pointer;*/
+/*    background: #84d6fb;*/
+/*}*/
+/*.keyboard :nth-child(1) :last-child{*/
+/*    width: 100px;*/
+/*}*/
+/*.keyboard :nth-child(2) :first-child{*/
+/*    width: 50px;*/
+/*}*/
+/*.keyboard :nth-child(3) :first-child{*/
+/*    width: 100px;*/
+/*}*/
+/*.keyboard :nth-child(3) :last-child{*/
+/*    width: 90px;*/
+/*}*/
+/*.keyboard :nth-child(4) :first-child{*/
+/*    width: 100px;*/
+/*}*/
+/*.keyboard :nth-child(5) :nth-child(1){*/
+/*    width: 60px;*/
+/*}*/
+/*.keyboard :nth-child(5) :nth-child(5){*/
+/*    width: 60px;*/
+/*}*/
+/*.keyboard :nth-child(5) :nth-child(6){*/
+/*    width: 60px;*/
+/*}*/
+/*.keyboard :nth-child(5) :nth-child(4){*/
+/*    width: 300px;*/
+/*}*/
+/*.active{*/
+/*    !*border-radius: 20px;*!*/
+/*    background: #84d6fb;*/
+/*    transition: 0.25s;*/
+/*}*/
+/*.info{*/
+/*    width: 740px;*/
+/*    margin: 0px auto;*/
+/*    padding-top: 20px;*/
+/*}*/
+/*.info::before{*/
+/*    content: "Для переключения языка нажмите Ctrl+Shift L";*/
+/*    color: #5a70a0;*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*}*/
 
-    width: 730px;
-    height: 300px;
-    margin: 20px auto 10px;
-    padding: 10px;
-    font-size: 24px;
-    border: 1px solid #5a70a0;
-    resize: none
+
+.textarea {
+    width: 55rem;
+    height: 17rem;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #5a70a0;;
+    font-size: 2.2rem;
 }
-textarea:focus{
-    box-shadow: 0 0 10px rgba(90, 112, 160,1);
-    border: 1px solid rgba(90, 112, 160,1);
+
+textarea:focus {
+    box-shadow: 0 0 10px rgba(90, 112, 160, 1);
+    border: 1px solid rgba(90, 112, 160, 1);
 
 }
-.keyboard{
+
+.keyboard {
+    width: 57rem;
+    height: 19rem;
     border: 2px solid white;
-    margin :0px auto;
-    width: 760px;
+    position: absolute;
+    top: 19rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px;
 }
-.keyboard-row{
-    width: 100%;
-    display: flex;
-}
-.keyboard-letter{
-    width: 40px;
-    height: 29px;
-    margin: 5px;
-    background: #5a70a0;
-    border-radius: 5px;
+
+.keyboard__keys {
     text-align: center;
-    padding-top: 11px;
-    font-size: 16px;
-    font-weight: bold;
 }
-.keyboard-letter:hover{
+
+.keyboard__key {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    position: relative;
+    width: 47px;
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: #5a70a0;
+    border-radius: 4px;
+    color: #fff;
+    transition: all 0.5s;
+    margin: 5px;
+}
+
+.keyboard__key:hover {
     cursor: pointer;
     background: #84d6fb;
 }
-.keyboard :nth-child(1) :last-child{
-    width: 100px;
+
+.keyboard__key:active {
+    background-color: rgba(6, 12, 45, 0.8);
 }
-.keyboard :nth-child(2) :first-child{
-    width: 50px;
+
+.keyboard__key-1{
+    width: 6.5rem;
 }
-.keyboard :nth-child(3) :first-child{
-    width: 100px;
+
+.keyboard__key-2 {
+    width: 10rem;
 }
-.keyboard :nth-child(3) :last-child{
-    width: 90px;
+
+.keyboard__key-3 {
+    width: 27.5rem;
 }
-.keyboard :nth-child(4) :first-child{
-    width: 100px;
-}
-.keyboard :nth-child(5) :nth-child(1){
-    width: 60px;
-}
-.keyboard :nth-child(5) :nth-child(5){
-    width: 60px;
-}
-.keyboard :nth-child(5) :nth-child(6){
-    width: 60px;
-}
-.keyboard :nth-child(5) :nth-child(4){
-    width: 300px;
-}
-.active{
-    border-radius: 20px;
+
+.active {
     background: #84d6fb;
     transition: 0.25s;
 }
-.info{
-    width: 740px;
-    margin: 0px auto;
-    padding-top: 20px;
-}
-.info::before{
-    content: "Для переключения языка нажмите Ctrl+Shift L";
-    color: #5a70a0;
-    display: flex;
-    justify-content: flex-end;
+
+.info {
+    position: absolute;
+    top: 39rem;
+    left: 21%;
+    font-size: 1.2rem;
 }
