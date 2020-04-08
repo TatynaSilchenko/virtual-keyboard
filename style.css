@@ -1,0 +1,78 @@
+.textarea {
+    width: 55rem;
+    height: 17rem;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #5a70a0;;
+    font-size: 2.2rem;
+}
+.textarea:focus {
+    box-shadow: 0 0 10px rgba(90, 112, 160, 1);
+    border: 1px solid rgba(90, 112, 160, 1);
+
+}
+.keyboard {
+    width: 57rem;
+    height: 19rem;
+    border: 2px solid white;
+    position: absolute;
+    top: 19rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px;
+}
+.keyboard__keys {
+    text-align: center;
+}
+.keyboard__key {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    position: relative;
+    width: 47px;
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: #5a70a0;
+    border-radius: 4px;
+    color: #fff;
+    transition: all 0.5s;
+    margin: 5px;
+}
+
+.keyboard__key:hover {
+    cursor: pointer;
+    background: #84d6fb;
+}
+
+.keyboard__key:active {
+    background-color: rgba(6, 12, 45, 0.8);
+}
+
+.keyboard__key-1{
+    width: 6.5rem;
+}
+
+.keyboard__key-2 {
+    width: 10rem;
+}
+
+.keyboard__key-3 {
+    width: 27.5rem;
+}
+
+.active {
+    background: #84d6fb;
+    transition: 0.25s;
+}
+
+.info {
+    position: absolute;
+    top: 39rem;
+    left: 21%;
+    font-size: 1.2rem;
+}
